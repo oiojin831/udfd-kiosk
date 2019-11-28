@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D03B5AC238BAD0100E922DB /* AgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D03B5AB238BAD0100E922DB /* AgreementView.swift */; };
+		9D03B5AE238CC45100E922DB /* ConfirmReservationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D03B5AD238CC45100E922DB /* ConfirmReservationView.swift */; };
+		9D03B5B0238CCC6500E922DB /* ShowCheckInDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D03B5AF238CCC6500E922DB /* ShowCheckInDataView.swift */; };
+		9D03B5B2238CCFA800E922DB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D03B5B1238CCFA800E922DB /* GoogleService-Info.plist */; };
 		9D2ED35F2387B9A10074466B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2ED35E2387B9A10074466B /* AppDelegate.swift */; };
 		9D2ED3612387B9A10074466B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2ED3602387B9A10074466B /* SceneDelegate.swift */; };
 		9D2ED3632387B9A10074466B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2ED3622387B9A10074466B /* ContentView.swift */; };
@@ -15,6 +19,10 @@
 		9D2ED36B2387B9A40074466B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2ED3692387B9A40074466B /* LaunchScreen.storyboard */; };
 		9D2ED3762387B9A40074466B /* udfd_kioskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2ED3752387B9A40074466B /* udfd_kioskTests.swift */; };
 		9D2ED3812387B9A40074466B /* udfd_kioskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2ED3802387B9A40074466B /* udfd_kioskUITests.swift */; };
+		9D2ED3902387BA320074466B /* Reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2ED38F2387BA320074466B /* Reservation.swift */; };
+		E02C232D590A326C2D16DDB0 /* Pods_udfd_kioskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C2D33557301141FF9F2D36A /* Pods_udfd_kioskTests.framework */; };
+		F2A591B25E0A1D11F6885E9D /* Pods_udfd_kiosk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA6E07E1B893493EA9643ACE /* Pods_udfd_kiosk.framework */; };
+		FF457E4C6950A38524A106AF /* Pods_udfd_kioskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7C7783B4A621D5B43EFAF0 /* Pods_udfd_kioskUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5A35BD04E8CB50DA77D764F3 /* Pods-udfd-kiosk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-udfd-kiosk.debug.xcconfig"; path = "Target Support Files/Pods-udfd-kiosk/Pods-udfd-kiosk.debug.xcconfig"; sourceTree = "<group>"; };
+		5C2D33557301141FF9F2D36A /* Pods_udfd_kioskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_udfd_kioskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60CCEC9CE120684875DCF804 /* Pods-udfd-kioskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-udfd-kioskTests.debug.xcconfig"; path = "Target Support Files/Pods-udfd-kioskTests/Pods-udfd-kioskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D03B5AB238BAD0100E922DB /* AgreementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementView.swift; sourceTree = "<group>"; };
+		9D03B5AD238CC45100E922DB /* ConfirmReservationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmReservationView.swift; sourceTree = "<group>"; };
+		9D03B5AF238CCC6500E922DB /* ShowCheckInDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCheckInDataView.swift; sourceTree = "<group>"; };
+		9D03B5B1238CCFA800E922DB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9D2ED35B2387B9A10074466B /* udfd-kiosk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "udfd-kiosk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D2ED35E2387B9A10074466B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D2ED3602387B9A10074466B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +64,13 @@
 		9D2ED37C2387B9A40074466B /* udfd-kioskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "udfd-kioskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D2ED3802387B9A40074466B /* udfd_kioskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = udfd_kioskUITests.swift; sourceTree = "<group>"; };
 		9D2ED3822387B9A40074466B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D2ED38F2387BA320074466B /* Reservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reservation.swift; sourceTree = "<group>"; };
+		9D7C7783B4A621D5B43EFAF0 /* Pods_udfd_kioskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_udfd_kioskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9A4C94C9B8E93AA035E09BC /* Pods-udfd-kioskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-udfd-kioskTests.release.xcconfig"; path = "Target Support Files/Pods-udfd-kioskTests/Pods-udfd-kioskTests.release.xcconfig"; sourceTree = "<group>"; };
+		B7C9AEDF18AF66C4D0383A42 /* Pods-udfd-kioskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-udfd-kioskUITests.debug.xcconfig"; path = "Target Support Files/Pods-udfd-kioskUITests/Pods-udfd-kioskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BB2D0525519684B99B9055BF /* Pods-udfd-kioskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-udfd-kioskUITests.release.xcconfig"; path = "Target Support Files/Pods-udfd-kioskUITests/Pods-udfd-kioskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C18CA269F82D0CE64BB277EC /* Pods-udfd-kiosk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-udfd-kiosk.release.xcconfig"; path = "Target Support Files/Pods-udfd-kiosk/Pods-udfd-kiosk.release.xcconfig"; sourceTree = "<group>"; };
+		EA6E07E1B893493EA9643ACE /* Pods_udfd_kiosk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_udfd_kiosk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2A591B25E0A1D11F6885E9D /* Pods_udfd_kiosk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E02C232D590A326C2D16DDB0 /* Pods_udfd_kioskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +94,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF457E4C6950A38524A106AF /* Pods_udfd_kioskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		38BBFC9B6A3DB80D84D9A7AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A35BD04E8CB50DA77D764F3 /* Pods-udfd-kiosk.debug.xcconfig */,
+				C18CA269F82D0CE64BB277EC /* Pods-udfd-kiosk.release.xcconfig */,
+				60CCEC9CE120684875DCF804 /* Pods-udfd-kioskTests.debug.xcconfig */,
+				A9A4C94C9B8E93AA035E09BC /* Pods-udfd-kioskTests.release.xcconfig */,
+				B7C9AEDF18AF66C4D0383A42 /* Pods-udfd-kioskUITests.debug.xcconfig */,
+				BB2D0525519684B99B9055BF /* Pods-udfd-kioskUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6D524842B3D434B5705B0DB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA6E07E1B893493EA9643ACE /* Pods_udfd_kiosk.framework */,
+				5C2D33557301141FF9F2D36A /* Pods_udfd_kioskTests.framework */,
+				9D7C7783B4A621D5B43EFAF0 /* Pods_udfd_kioskUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9D2ED3522387B9A10074466B = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +131,8 @@
 				9D2ED3742387B9A40074466B /* udfd-kioskTests */,
 				9D2ED37F2387B9A40074466B /* udfd-kioskUITests */,
 				9D2ED35C2387B9A10074466B /* Products */,
+				38BBFC9B6A3DB80D84D9A7AB /* Pods */,
+				6D524842B3D434B5705B0DB8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +149,8 @@
 		9D2ED35D2387B9A10074466B /* udfd-kiosk */ = {
 			isa = PBXGroup;
 			children = (
+				9D03B5B1238CCFA800E922DB /* GoogleService-Info.plist */,
+				9D2ED38E2387BA0E0074466B /* Models */,
 				9D2ED35E2387B9A10074466B /* AppDelegate.swift */,
 				9D2ED3602387B9A10074466B /* SceneDelegate.swift */,
 				9D2ED3622387B9A10074466B /* ContentView.swift */,
@@ -106,6 +158,9 @@
 				9D2ED3692387B9A40074466B /* LaunchScreen.storyboard */,
 				9D2ED36C2387B9A40074466B /* Info.plist */,
 				9D2ED3662387B9A40074466B /* Preview Content */,
+				9D03B5AB238BAD0100E922DB /* AgreementView.swift */,
+				9D03B5AD238CC45100E922DB /* ConfirmReservationView.swift */,
+				9D03B5AF238CCC6500E922DB /* ShowCheckInDataView.swift */,
 			);
 			path = "udfd-kiosk";
 			sourceTree = "<group>";
@@ -136,6 +191,14 @@
 			path = "udfd-kioskUITests";
 			sourceTree = "<group>";
 		};
+		9D2ED38E2387BA0E0074466B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9D2ED38F2387BA320074466B /* Reservation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +206,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D2ED3852387B9A40074466B /* Build configuration list for PBXNativeTarget "udfd-kiosk" */;
 			buildPhases = (
+				2FAA3536900A36EEB0DA3CFD /* [CP] Check Pods Manifest.lock */,
 				9D2ED3572387B9A10074466B /* Sources */,
 				9D2ED3582387B9A10074466B /* Frameworks */,
 				9D2ED3592387B9A10074466B /* Resources */,
+				AB0A61E75FDDED64D9602E1F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +225,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D2ED3882387B9A40074466B /* Build configuration list for PBXNativeTarget "udfd-kioskTests" */;
 			buildPhases = (
+				65F28A6549B1AA9BB1661BA1 /* [CP] Check Pods Manifest.lock */,
 				9D2ED36D2387B9A40074466B /* Sources */,
 				9D2ED36E2387B9A40074466B /* Frameworks */,
 				9D2ED36F2387B9A40074466B /* Resources */,
@@ -178,6 +244,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D2ED38B2387B9A40074466B /* Build configuration list for PBXNativeTarget "udfd-kioskUITests" */;
 			buildPhases = (
+				1C5BF08511350B4C96E98F21 /* [CP] Check Pods Manifest.lock */,
 				9D2ED3782387B9A40074466B /* Sources */,
 				9D2ED3792387B9A40074466B /* Frameworks */,
 				9D2ED37A2387B9A40074466B /* Resources */,
@@ -240,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D03B5B2238CCFA800E922DB /* GoogleService-Info.plist in Resources */,
 				9D2ED36B2387B9A40074466B /* LaunchScreen.storyboard in Resources */,
 				9D2ED3682387B9A40074466B /* Preview Assets.xcassets in Resources */,
 				9D2ED3652387B9A40074466B /* Assets.xcassets in Resources */,
@@ -262,14 +330,104 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C5BF08511350B4C96E98F21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-udfd-kioskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2FAA3536900A36EEB0DA3CFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-udfd-kiosk-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65F28A6549B1AA9BB1661BA1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-udfd-kioskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB0A61E75FDDED64D9602E1F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-udfd-kiosk/Pods-udfd-kiosk-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-udfd-kiosk/Pods-udfd-kiosk-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-udfd-kiosk/Pods-udfd-kiosk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9D2ED3572387B9A10074466B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D03B5B0238CCC6500E922DB /* ShowCheckInDataView.swift in Sources */,
+				9D03B5AE238CC45100E922DB /* ConfirmReservationView.swift in Sources */,
 				9D2ED35F2387B9A10074466B /* AppDelegate.swift in Sources */,
 				9D2ED3612387B9A10074466B /* SceneDelegate.swift in Sources */,
+				9D2ED3902387BA320074466B /* Reservation.swift in Sources */,
 				9D2ED3632387B9A10074466B /* ContentView.swift in Sources */,
+				9D03B5AC238BAD0100E922DB /* AgreementView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +590,7 @@
 		};
 		9D2ED3862387B9A40074466B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A35BD04E8CB50DA77D764F3 /* Pods-udfd-kiosk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -443,15 +602,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ist.undefinedist.udfd-kiosk";
+				PRODUCT_BUNDLE_IDENTIFIER = ist.undefined.kiosk.udfdkiosk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
 		9D2ED3872387B9A40074466B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C18CA269F82D0CE64BB277EC /* Pods-udfd-kiosk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -463,15 +623,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ist.undefinedist.udfd-kiosk";
+				PRODUCT_BUNDLE_IDENTIFIER = ist.undefined.kiosk.udfdkiosk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
 		9D2ED3892387B9A40074466B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60CCEC9CE120684875DCF804 /* Pods-udfd-kioskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -494,6 +655,7 @@
 		};
 		9D2ED38A2387B9A40074466B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9A4C94C9B8E93AA035E09BC /* Pods-udfd-kioskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +678,7 @@
 		};
 		9D2ED38C2387B9A40074466B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7C9AEDF18AF66C4D0383A42 /* Pods-udfd-kioskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -536,6 +699,7 @@
 		};
 		9D2ED38D2387B9A40074466B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB2D0525519684B99B9055BF /* Pods-udfd-kioskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
