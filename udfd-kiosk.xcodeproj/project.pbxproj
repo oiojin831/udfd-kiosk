@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		9D03B5AC238BAD0100E922DB /* AgreementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D03B5AB238BAD0100E922DB /* AgreementView.swift */; };
 		9D03B5AE238CC45100E922DB /* ConfirmReservationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D03B5AD238CC45100E922DB /* ConfirmReservationView.swift */; };
-		9D03B5B0238CCC6500E922DB /* ShowCheckInDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D03B5AF238CCC6500E922DB /* ShowCheckInDataView.swift */; };
+		9D03B5B0238CCC6500E922DB /* ShowCheckInDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D03B5AF238CCC6500E922DB /* ShowCheckInDataView.swift */; settings = {COMPILER_FLAGS = "-enable-library-evolution"; }; };
 		9D03B5B2238CCFA800E922DB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9D03B5B1238CCFA800E922DB /* GoogleService-Info.plist */; };
 		9D2ED35F2387B9A10074466B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2ED35E2387B9A10074466B /* AppDelegate.swift */; };
 		9D2ED3612387B9A10074466B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2ED3602387B9A10074466B /* SceneDelegate.swift */; };
@@ -20,6 +20,8 @@
 		9D2ED3762387B9A40074466B /* udfd_kioskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2ED3752387B9A40074466B /* udfd_kioskTests.swift */; };
 		9D2ED3812387B9A40074466B /* udfd_kioskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2ED3802387B9A40074466B /* udfd_kioskUITests.swift */; };
 		9D2ED3902387BA320074466B /* Reservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2ED38F2387BA320074466B /* Reservation.swift */; };
+		9D9A57662390E709000EA653 /* sam4sPrtSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D9A57652390E709000EA653 /* sam4sPrtSdk.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		9D9A57672390E709000EA653 /* sam4sPrtSdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9D9A57652390E709000EA653 /* sam4sPrtSdk.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E02C232D590A326C2D16DDB0 /* Pods_udfd_kioskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C2D33557301141FF9F2D36A /* Pods_udfd_kioskTests.framework */; };
 		F2A591B25E0A1D11F6885E9D /* Pods_udfd_kiosk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA6E07E1B893493EA9643ACE /* Pods_udfd_kiosk.framework */; };
 		FF457E4C6950A38524A106AF /* Pods_udfd_kioskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D7C7783B4A621D5B43EFAF0 /* Pods_udfd_kioskUITests.framework */; };
@@ -41,6 +43,20 @@
 			remoteInfo = "udfd-kiosk";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9D9A57682390E709000EA653 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9D9A57672390E709000EA653 /* sam4sPrtSdk.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5A35BD04E8CB50DA77D764F3 /* Pods-udfd-kiosk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-udfd-kiosk.debug.xcconfig"; path = "Target Support Files/Pods-udfd-kiosk/Pods-udfd-kiosk.debug.xcconfig"; sourceTree = "<group>"; };
@@ -66,6 +82,8 @@
 		9D2ED3822387B9A40074466B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D2ED38F2387BA320074466B /* Reservation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reservation.swift; sourceTree = "<group>"; };
 		9D7C7783B4A621D5B43EFAF0 /* Pods_udfd_kioskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_udfd_kioskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D9A57602390E5AA000EA653 /* sam4sPrtSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = sam4sPrtSdk.framework; path = "../../../Downloads/Gcube_ios_sdk_v1.0 3/sam4sPrtSdk.framework"; sourceTree = "<group>"; };
+		9D9A57652390E709000EA653 /* sam4sPrtSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = sam4sPrtSdk.framework; sourceTree = "<group>"; };
 		A9A4C94C9B8E93AA035E09BC /* Pods-udfd-kioskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-udfd-kioskTests.release.xcconfig"; path = "Target Support Files/Pods-udfd-kioskTests/Pods-udfd-kioskTests.release.xcconfig"; sourceTree = "<group>"; };
 		B7C9AEDF18AF66C4D0383A42 /* Pods-udfd-kioskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-udfd-kioskUITests.debug.xcconfig"; path = "Target Support Files/Pods-udfd-kioskUITests/Pods-udfd-kioskUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BB2D0525519684B99B9055BF /* Pods-udfd-kioskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-udfd-kioskUITests.release.xcconfig"; path = "Target Support Files/Pods-udfd-kioskUITests/Pods-udfd-kioskUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -79,6 +97,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2A591B25E0A1D11F6885E9D /* Pods_udfd_kiosk.framework in Frameworks */,
+				9D9A57662390E709000EA653 /* sam4sPrtSdk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +136,8 @@
 		6D524842B3D434B5705B0DB8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9D9A57602390E5AA000EA653 /* sam4sPrtSdk.framework */,
+				9D9A57652390E709000EA653 /* sam4sPrtSdk.framework */,
 				EA6E07E1B893493EA9643ACE /* Pods_udfd_kiosk.framework */,
 				5C2D33557301141FF9F2D36A /* Pods_udfd_kioskTests.framework */,
 				9D7C7783B4A621D5B43EFAF0 /* Pods_udfd_kioskUITests.framework */,
@@ -211,6 +232,7 @@
 				9D2ED3582387B9A10074466B /* Frameworks */,
 				9D2ED3592387B9A10074466B /* Resources */,
 				AB0A61E75FDDED64D9602E1F /* [CP] Embed Pods Frameworks */,
+				9D9A57682390E709000EA653 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -593,10 +615,15 @@
 			baseConfigurationReference = 5A35BD04E8CB50DA77D764F3 /* Pods-udfd-kiosk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"udfd-kiosk/Preview Content\"";
 				DEVELOPMENT_TEAM = GS8LLCC8F9;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "udfd-kiosk/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -614,10 +641,15 @@
 			baseConfigurationReference = C18CA269F82D0CE64BB277EC /* Pods-udfd-kiosk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"udfd-kiosk/Preview Content\"";
 				DEVELOPMENT_TEAM = GS8LLCC8F9;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "udfd-kiosk/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

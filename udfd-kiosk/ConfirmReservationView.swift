@@ -8,6 +8,8 @@
 
 import SwiftUI
 import Firebase
+import Combine
+
 
 struct ConfirmReservationView: View {
     @EnvironmentObject var obser: observer
@@ -27,11 +29,11 @@ struct ConfirmReservationView: View {
         VStack {
                 Text("Reservation Code")
                     .font(.headline)
-            TextField(obser.instructions[self.index].reservationCodePlaceholder, text: $reservationCode)
+                TextField(obser.instructions[self.index].reservationCodePlaceholder, text: $reservationCode)
                     .padding(.all)
                 Button(action: {
                     self.resObser.fetchReservation(reservationCode: self.reservationCode)
-                    self.isModal = true
+                    self.isModal.toggle()
                 }) {
                     Text("Hello")
                 }.sheet(isPresented: $isModal, content: {
@@ -52,7 +54,14 @@ struct ConfirmReservationView: View {
 //view model
 class resObserver : ObservableObject {
     
-    @Published var reservations = [resDatatype]()
+    @Published var reservations: [resDatatype] = [] {
+           didSet {
+               didChange.send(self)
+           }
+       }
+
+       var didChange = PassthroughSubject<resObserver, Never>()
+
     let db = Firestore.firestore()
 
     func fetchReservation(reservationCode: String) {
@@ -63,21 +72,26 @@ class resObserver : ObservableObject {
             }
         
             self.reservations = []
-            for i in snap.documents {
-                let id = i.documentID
-                let checkInDate = i.get("checkInDate") as! String
-                let checkInTime = i.get("checkInTime") as! Int
-                let checkOutDate = i.get("checkOutDate") as! String
-                let checkOutTime = i.get("checkOutTime") as! Int
-                let guestName = i.get("guestName") as! String
-                let guestHouseName = i.get("guestHouseName") as! String
-                let platform = i.get("platform") as! String
-                let price = i.get("price") as! String
+            DispatchQueue.main.async {
 
-                
-                self.reservations.append(resDatatype(id: id, checkInDate: checkInDate, checkInTime: checkInTime, checkOutDate: checkOutDate, checkOutTime: checkOutTime, guestName: guestName,guestHouseName: guestHouseName, platform: platform, price: price))
-                print("insid")
-                print(self.reservations)
+                for i in snap.documents {
+                    let id = i.documentID
+                    let checkInDate = i.get("checkInDate") as! String
+                    let checkInTime = i.get("checkInTime") as! Int
+                    let checkOutDate = i.get("checkOutDate") as! String
+                    let checkOutTime = i.get("checkOutTime") as! Int
+                    let guestName = i.get("guestName") as! String
+                    let guestHouseName = i.get("guestHouseName") as! String
+                    let platform = i.get("platform") as! String
+                    let price = i.get("price") as! String
+                    let roomNumber = i.get("roomNumber") as! String
+
+
+                    
+                    self.reservations.append(resDatatype(id: id, checkInDate: checkInDate, checkInTime: checkInTime, checkOutDate: checkOutDate, checkOutTime: checkOutTime, guestName: guestName,guestHouseName: guestHouseName, platform: platform, price: price, roomNumber: roomNumber))
+                    print("insid")
+                    print(self.reservations)
+                }
             }
         }
     }
@@ -95,5 +109,6 @@ struct resDatatype : Identifiable {
     var guestHouseName : String
     var platform : String
     var price : String
+    var roomNumber: String
 }
 

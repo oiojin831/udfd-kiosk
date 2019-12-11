@@ -6,7 +6,7 @@ target 'udfd-kiosk' do
   use_frameworks!
 
   pod 'Firebase/Firestore'
-
+  pod 'Firebase/Core'
   # Pods for udfd-kiosk
 
   target 'udfd-kioskTests' do

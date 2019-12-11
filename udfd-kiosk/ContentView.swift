@@ -14,6 +14,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
+                Image("jhonor2")
                 Text("J Honor GuestHouse")
                 LanguageView()
             }

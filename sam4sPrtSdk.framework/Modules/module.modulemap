@@ -1,0 +1,11 @@
+framework module sam4sPrtSdk {
+  umbrella header "sam4sPrtSdk.h"
+
+  export *
+  module * { export * }
+}
+
+module sam4sPrtSdk.Swift {
+    header "sam4sPrtSdk-Swift.h"
+    requires objc
+}
